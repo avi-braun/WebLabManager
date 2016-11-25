@@ -1,0 +1,24 @@
+{%load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!--<meta charset="UTF-8">-->
+    <title>{% block title %}{%endblock%}</title>
+    <link href="{% static "css/base.css" %}" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'mystyle.css' %}">-->
+</head>
+<body>
+<div id="header">
+    <span class="logo"><WebLabManager</span>
+</div>
+
+<div id="content">
+    {% block content %}
+    {% endblock%}
+</div>
+
+
+</body>
+</html>
