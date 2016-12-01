@@ -52,6 +52,10 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# AUTHENTICATION_BACKENDS = (
+#     'account.authentication.EmailAuthBackend',
+# )
+EMAIL_BACKEND= 'django.core.mail.backends.console.EmailBackend'
 ROOT_URLCONF = 'WebLabManager.urls'
 
 TEMPLATES = [
